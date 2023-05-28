@@ -1,0 +1,321 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", "Merriweather", sans-serif;
+}
+
+header .logo {
+    width: 100px;
+    height: 100px;
+    display: block;
+
+}
+
+p,
+span {
+    text-decoration: none;
+    font-size: 15px;
+}
+
+h2 {
+    margin-bottom: 70px;
+}
+
+header,
+a {
+    background: url(img/fondo.jpg);
+    background-size: 400px;
+    background-repeat: repeat;
+    /* display: flex; */
+    /* justify-content: space-between;
+    align-items: center; */
+    color: white;
+    text-decoration: none;
+
+}
+
+li {
+    display: inline;
+    padding-right: 20px;
+    margin: 20px 0px;
+
+}
+
+.titulo {
+    color: rgb(155, 155, 155);
+    text-align: center;
+    font-size: 80px;
+    font-family: Merriweather;
+
+}
+
+.titulo:hover {
+    text-shadow:
+        3px 4px 3px rgb(180, 56, 40),
+        3px 4px 6px rgb(231, 224, 223),
+        3px 4px 10px rgb(231, 224, 223),
+        3px 4px 12px rgb(233, 40, 14);
+    color: rgb(55, 55, 56)
+}
+
+
+.destacados {
+    text-align: center;
+    margin-bottom: 50px;
+    text-decoration: overline;
+    text-decoration: none;
+}
+
+.container {
+    height: 400px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 20px;
+
+}
+
+.container .bebidas,
+.cerveza,
+.tabla {
+    height: 100%;
+    margin: 20px;
+
+}
+
+.container #vasos,
+#tab,
+#shop {
+    width: 300px;
+    height: 40%;
+    border-radius: 20px;
+    box-shadow: 4px 4px 3px rgb(121, 120, 120);
+}
+
+
+
+.text-com {
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form-cont {
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+
+}
+
+.form-cont .comuniq {
+    background-color: rgb(55, 55, 56);
+    width: 50%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+
+
+    border-radius: 19px;
+    border: rgba(231, 47, 47, 0.541) solid;
+    color: white;
+    margin-bottom: 50px;
+
+}
+
+.form-cont .comuniq form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.form-cont .comuniq button {
+    border-radius: 30px;
+    height: 5vh;
+    width: 50%;
+    background-color: rgba(231, 47, 47, 0.541);
+    font-size: 20px;
+    border: none;
+    color: white;
+    margin: 10px;
+}
+
+.form-cont .comuniq button:hover {
+    box-shadow: 3px 2px 3px #929191;
+
+}
+
+.form-cont .reser .form-2 {
+    background-color: rgb(55, 55, 56);
+    width: 90%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 19px;
+    border: rgba(231, 47, 47, 0.541) solid;
+    color: white;
+    margin-bottom: 50px;
+
+}
+
+
+.form-cont .reser form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.form-cont .reser .text-reserva {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-cont .reser button {
+    border-radius: 30px;
+    height: 5vh;
+    width: 100%;
+    background-color: rgba(231, 47, 47, 0.541);
+    font-size: 20px;
+    border: none;
+    color: white;
+    margin: 10px;
+
+}
+
+.form-cont .reser button:hover {
+    box-shadow: 3px 2px 3px #929191;
+
+}
+
+footer {
+    display: flex;
+    height: 20vh;
+    width: 100%;
+    background: url(img/fondo.jpg), rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    background-repeat: no-repeat;
+
+}
+
+/* Estilo para la imagen destacada */
+.imagen-destacada {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    z-index: 9999;
+    transition: all 0.3s ease;
+    background-color: black;
+    color: antiquewhite;
+}
+
+/* Estilo para el cuerpo de la página cuando la imagen está destacada */
+.imagen-destacada-activo {
+    overflow: hidden;
+}
+
+/* Estilo para permitir el scroll cuando la imagen está destacada */
+.imagen-destacada-activo body {
+    overflow: auto;
+}
+
+
+
+/* Uso de media querys*/
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        height: fit-content;
+        position: relative;
+        grid-template-areas:
+            "a b "
+            "c c ";
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
+
+
+    .container .cerveza {
+
+        position: absolute;
+        grid-area: c;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:991px) {
+
+    .form-cont {
+        display: none;
+    }
+
+    .form-cont.active {
+        display: block;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        position: relative;
+        height: fit-content;
+
+    }
+
+    .container .cerveza,
+    .bebidas,
+    .tabla {
+
+        position: relative;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .container #vasos,
+    #tab,
+    #shop {
+        width: 350px;
+        height: auto;
+        border-radius: 30px;
+        box-shadow: 4px 4px 3px rgb(121, 120, 120);
+    }
+
+    p {
+        align-items: center;
+        justify-content: center;
+    }
+
+
+}

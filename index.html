@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NIMRODEL Restaurant Y Pub</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Enlaces a hojas de estilo -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Icono del sitio -->
+  <link rel="icon" href="/img/n.png" type="image/x-icon" />
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+</head>
+
+<body>
+  <header>
+    <!-- Logo del sitio -->
+    <img src="/img/n.png" alt="logo" class="logo" />
+
+    <!-- Lista de enlaces de navegación -->
+    <ul>
+      <li>Nuestros productos</li>
+      <li>Sobre nosotros</li>
+      <li><a href="#form-com" onclick="mostrarFormulario('form-com')">Comuniquémonos</a></li>
+      <li><a href="#form-reserva" onclick="mostrarFormulario('form-reserva')">Reserva</a></li>
+    </ul>
+  </header>
+
+  <!-- Título principal -->
+  <h1 class="titulo">Nimrodel Pub Restaurant</h1>
+
+  <!-- Subtítulo -->
+  <div class="destacados">
+    <h2>Destacados de la semana</h2>
+    <div class="container">
+      <div class="bebidas">
+        <img src="img/bebidas.jpg" alt="" id="vasos">
+        <h3>Bebidas</h3>
+        <p>
+          Descubre el placer de las bebidas excepcionales en NIMRODEL Restaurant Y Pub. Nuestro exclusivo
+          establecimiento te ofrece una selección cautivadora de bebidas que te transportarán a un mundo de sabores
+          inigualables. Desde refrescantes cócteles hasta vinos de calidad, cada sorbo es una experiencia única.
+          Nuestros expertos mixólogos han creado creaciones líquidas extraordinarias que despertarán tus sentidos y te
+          harán disfrutar cada momento. Ya sea que busques un clásico atemporal o desees explorar nuevos sabores, en
+          NIMRODEL encontrarás la compañía perfecta para tus momentos especiales. Ven y déjate llevar por la emoción de
+          nuestras bebidas excepcionales.
+        </p>
+
+      </div>
+
+      <div class="tabla">
+        <img src="img/tablas.jpg" alt="" id="tab">
+        <h3>Tablas</h3>
+        <p>Disfruta de tablas exquisitas en NIMRODEL Restaurant Y Pub. Nuestras tablas cuidadosamente elaboradas
+          combinan ingredientes premium para ofrecerte una experiencia gastronómica única. Desde quesos exquisitos hasta
+          embutidos de calidad, cada bocado es una delicia. Sumérgete en el arte culinario de nuestras tablas y descubre
+          una explosión de sabores y texturas. Ven y descubre el placer de saborear nuestras tablas perfectamente
+          equilibradas en NIMRODEL Restaurant Y Pub.</p>
+
+      </div>
+
+      <div class="cerveza">
+        <img src="img/shop.jpeg" alt="" id="shop">
+        <h3>Cervezas</h3>
+        <p>Explora cervezas excepcionales en NIMRODEL Restaurant Y Pub. Tenemos una amplia selección que satisfará todos
+          los gustos. Descubre sabores únicos y sumérgete en el fascinante mundo de las cervezas. Ven y disfruta de una
+          experiencia cervecera inigualable en NIMRODEL Restaurant Y Pub. ¡Brindemos juntos!</p>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="form-cont" id="form-com">
+    <div class="comuniq">
+      <div class="form-1">
+        <div class="text-com">
+          <h1>Comuniquémonos</h1>
+          <p>Comunícate con nosotros. Estamos aquí para escucharte y atender tus consultas. Completa el siguiente
+            formulario y nos pondremos en contacto contigo en breve. Tu opinión es importante para nosotros.</p><br>
+        </div>
+        <form action="redireccion.html">
+          <label for="nombre"><span> Nombre</span></label>
+          <input type="text" name="nombre" id="nombre" required><br><br>
+
+          <label for="correo">Correo</label>
+          <input type="email" name="correo" id="correo" required><br><br>
+
+          <label for="telefono">Teléfono</label>
+          <input type="tel" name="telefono" id="telefono" required><br><br>
+
+          <label for="motivo">Motivo</label>
+          <input type="text" name="motivo"><br><br>
+
+          <textarea id="motivo" name="motivo" rows="4" cols="40"></textarea><br><br>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-cont" id="form-reserva">
+    <div class="reser">
+      <div class="form-2">
+        <div class="text-reserva">
+          <h1>Reserva</h1>
+          <p>Haz tu reserva ahora mismo. Completa el siguiente formulario para asegurar tu lugar en nuestro restaurante.
+            Nos encargaremos de crear una experiencia inolvidable para ti y tus acompañantes. ¡Esperamos con ansias tu
+            visita!</p><br>
+        </div>
+        <form id="reserva-form">
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" id="nombre-r" required><br><br>
+
+          <label for="correo">Correo</label>
+          <input type="email" name="correo" id="correo-r" required><br><br>
+
+          <label for="telefono">Teléfono</label>
+          <input type="tel" name="telefono" id="telefono-r"><br><br>
+
+          <label for="fecha">Fecha</label>
+          <input type="date" name="fecha" id="fecha-r" required><br><br>
+
+          <label for="hora">Hora</label>
+          <input type="time" name="hora" id="hora-r" required><br><br>
+
+          <label for="cantidad-asistentes">Cantidad de asistentes</label>
+          <input type="number" name="cantidad-asistentes" id="cantidad-asistentes-r"><br><br>
+
+          <button type="submit">Reservar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>Todos los derechos reservados <i class="far fa-registered"></i></p>
+  </footer>
+
+  <script src="index.js"></script>
+  <script src="jquery.js"></script>
+
+
+</body>
+
+</html>
